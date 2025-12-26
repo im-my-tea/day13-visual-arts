@@ -1,4 +1,4 @@
-# BROKEN CODE BLOCK 1
+#CODE BLOCK 1
 def mutate(a_list):
     b_list = []
     for item in a_list:
@@ -8,7 +8,8 @@ def mutate(a_list):
 
 mutate([1, 2, 3, 5, 8, 13])
 
-# BROKEN CODE BLOCK 2
+
+#CODE BLOCK 2
 year = int(input("Which year do you want to check? "))
 if year % 4 == 0:
     if year % 100 == 0:
@@ -20,8 +21,9 @@ if year % 4 == 0:
         print("Leap year.")
 else:
     print("Not leap year.")
-  
-# BROKEN CODE BLOCK 3
+
+
+#CODE BLOCK 3
 for number in range(1, 101):
     if number % 3 == 0 and number % 5 == 0:
         print("FizzBuzz")
