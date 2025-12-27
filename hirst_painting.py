@@ -1,3 +1,6 @@
+import turtle as t
+import random
+
 ### Color Palette (R, G, B) ###
 color_list = [
     (202, 173, 110), (232, 251, 242), (198, 161, 193), (223, 141, 95), 
@@ -8,3 +11,25 @@ color_list = [
     (53, 40, 75), (10, 103, 159), (241, 203, 129), (98, 201, 228), 
     (247, 242, 12), (158, 217, 237), (56, 42, 23), (12, 137, 117)
 ]
+t.colormode(255)
+X = t.Turtle()
+X.speed(10)
+X.penup()
+X.hideturtle()
+X.setheading(225)
+X.forward(300)
+X.setheading(0)
+
+for _ in range(10):
+    for _ in range(10):
+        colour = random.choice(color_list)
+        X.dot(20, colour)
+        X.fd(50)
+    X.left(90)
+    X.forward(50)
+    X.left(90)
+    X.forward(500)
+    X.left(180)
+
+
+X.screen.mainloop()
